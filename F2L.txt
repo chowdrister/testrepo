@@ -1,0 +1,24 @@
+F2L Main Algorithms:
+
+1) Top Left Corner-Edge Pair into Bottom Right Corner-Edge: R U'R'
+
+2) Top Right Corner-Edge Pair into Bottom Left Corner-Edge: L' U L
+
+3) Corner piece in Front-Top-Right and Edge piece on opposite side with different top colors: R U R'
+
+4) Corner piece in Front-Top-Left and Edge piece on opposite side with different top colors: L' U' L
+
+Steps:
+
+1. Put the corner and edge in the top layer. (if they are touching, you might have a special case: see 4:37)
+2. Is the white sticker is facing up?
+
+- White sticker NOT facing up:
+3. Place the corner above the slot, turn the top so you can still see the white sticker.
+4. If the top colors for each piece is the same, turn the corner away and move the edge beside the corner. If they don't match, move the edge across from the corner.
+5. Insert the pair.
+
+- White sticker facing up:
+3. Match the edge piece to its center.
+4. Turn edge away and place the corner on top of the edge.
+5. Insert the pair.
